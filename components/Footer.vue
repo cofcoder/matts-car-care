@@ -1,4 +1,5 @@
 <template>
+<no-ssr>
   <footer class="uk-section uk-section-muted">
     <div class="uk-container uk-text-center">
       <nuxt-link to="/">
@@ -9,6 +10,7 @@
       <p>WEBSITE BY <a href="https://thinkmilkdesign.co.uk" target="_blank" rel="noopener">TMD</a></p>
     </div>
   </footer>
+</no-ssr>
 </template>
 
 <style>

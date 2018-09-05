@@ -1,4 +1,5 @@
 <template>
+<no-ssr>
   <header>
     <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
       <nav class="uk-navbar-container uk-margin" uk-navbar>
@@ -34,19 +35,19 @@
           <div uk-dropdown="mode: click">
             <ul class="uk-nav uk-dropdown-nav">
               <li>
-                <nuxt-link to="/" exact>Home</nuxt-link>
+                <nuxt-link to="/" exact>HOME</nuxt-link>
               </li>
               <li>
-                <nuxt-link to="/about" exact>About</nuxt-link>
+                <nuxt-link to="/about" exact>ABOUT</nuxt-link>
               </li>
               <li>
-                <nuxt-link to="/services" exact>Services</nuxt-link>
+                <nuxt-link to="/services" exact>SERVICES</nuxt-link>
               </li>
               <li>
-                <nuxt-link to="/gallery" exact>Gallery</nuxt-link>
+                <nuxt-link to="/gallery" exact>GALLERY</nuxt-link>
               </li>
               <li>
-                <nuxt-link to="/contact" exact>Contact</nuxt-link>
+                <nuxt-link to="/contact" exact>CONTACT</nuxt-link>
               </li>
             </ul>
           </div>
@@ -54,16 +55,20 @@
       </nav>
     </div>
   </header>
+  </no-ssr>
 </template>
 
 <style scoped>
+.uk-navbar-container {
+  opacity: 0.97;
+}
 ul.uk-navbar-nav > li > a.nuxt-link-exact-active.nuxt-link-active {
   border-bottom: 2px solid #f06850;
   color: #f06850;
 }
 
 a.nuxt-link-exact-active.nuxt-link-active {
-    border-bottom: 2px solid #f06850;
+  border-bottom: 2px solid #f06850;
 }
 
 a.uk-link-heading {
