@@ -4,13 +4,15 @@
       <div class="uk-container uk-text-center">
         <h2>OUR WORK</h2>
         <div class="uk-child-width-1-3@s" uk-grid>
+          <!-- Ute -->
           <div>
             <div class="uk-card uk-card-default">
-              <div class="uk-card-media-top uk-border-rounded">
+              <div class="uk-card-media-top uk-border-rounded" >
                 <img src="~/assets/img/ute-matts.jpg" class="uk-border-rounded" alt="">
               </div>
             </div>
           </div>
+          <!-- Toyota -->
           <div>
             <div class="uk-card uk-card-default">
               <div class="uk-card-media-top uk-border-rounded">
@@ -18,6 +20,7 @@
               </div>
             </div>
           </div>
+          <!-- Mustang -->
           <div>
             <div class="uk-card uk-card-default">
               <div class="uk-card-media-top uk-border-rounded">
@@ -33,6 +36,3 @@
     </div>
   </no-ssr>
 </template>
-
-<style>
-</style>

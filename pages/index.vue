@@ -1,26 +1,30 @@
 <template>
-<div>
-  <div class="uk-section-default uk-section-hero">
-    <div class="uk-section uk-light">
-      <div class="uk-container uk-flex-center">
-        <div class="uk-text-center uk-position-center">
-          <h1 class="uk-heading-alt">AUTOMOTIVE DETAILING IN TOOWOOMBA</h1>
-          <h2 class="uk-heading-alt">YOUR PRIDE &amp; JOY IS IN THE RIGHT HANDS</h2>
-        </div>
-        <div class="uk-position-small uk-position-bottom-center">
-          <div class="mousey">
-            <div class="scroller">
+  <div>
+    <div class="uk-section-default uk-section-hero">
+      <div class="uk-section uk-light">
+        <div class="uk-container uk-flex-center">
+          <div class="uk-text-center uk-position-center">
+            <h1 class="uk-heading-alt">AUTOMOTIVE DETAILING IN TOOWOOMBA</h1>
+            <h2 class="uk-heading-alt">YOUR PRIDE &amp; JOY IS IN THE RIGHT HANDS</h2>
+          </div>
+          <div class="uk-position-small uk-position-bottom-center">
+            <div class="mousey">
+              <div class="scroller">
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- Client -->
+    <clients />
+    <!-- Detailing -->
+    <detailing />
+    <!-- Mini Gallery -->
+    <mini />
+    <!-- Booking -->
+    <booking />
   </div>
-  <clients/>
-  <detailing/>
-  <mini/>
-  <booking/>
-</div>
 </template>
 
 <script>
@@ -44,7 +48,7 @@ export default {
           hid: "description",
           name: "description",
           content:
-            "Matt's Car Care offers professional detailing for cars, utes, wagons, vans, 4x4's & quads for a high standard show room finish in Toowoomba."
+            "Matt's Car Care in Toowoomba offers showroom & professional automotive detailing for cars, utes, quads & more."
         }
       ]
     };
@@ -54,16 +58,18 @@ export default {
 
 <style>
 .uk-section-hero {
-  background: #ecc8c2;
   opacity: 0.9;
   background-size: cover;
-  background-image: url("~/assets/img/mainBG-min.jpg");
-  height: 95vh;
+  background-image: url("/assets/img/mainBG-min.jpg");
+  height: 100vh;
   width: 100%;
-  margin-top: -20px;
 }
-.uk-heading-alt {
-  color: #ecc8c2 !important;
+
+h1.uk-heading-alt {
+  color: #fff !important;
+}
+h2.uk-heading-alt {
+  color: #fff !important;
 }
 
 .mousey {
@@ -76,6 +82,7 @@ export default {
   box-sizing: content-box;
   margin-bottom: 10px;
 }
+
 .scroller {
   width: 3px;
   height: 10px;
@@ -86,14 +93,17 @@ export default {
   animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
   animation-iteration-count: infinite;
 }
+
 @keyframes scroll {
   0% {
     opacity: 0;
   }
+
   10% {
     transform: translateY(0);
     opacity: 1;
   }
+
   100% {
     transform: translateY(15px);
     opacity: 0;

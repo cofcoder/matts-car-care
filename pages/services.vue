@@ -1,9 +1,18 @@
 <template>
-  <h2>Services for Matt's Car Care</h2>
+<no-ssr>
+  <div>
+    <services/>
+  </div>
+</no-ssr>
 </template>
 
 <script>
+import Services from "~/components/Services.vue";
+
 export default {
+  components: {
+    Services
+  },
   head() {
     return {
       title: "Services",
@@ -12,7 +21,7 @@ export default {
           hid: "description",
           name: "description",
           content:
-            "Matt's Car Care offers professional detailing for cars, utes, wagons, vans, 4x4's & quads for a high standard show room finish in Toowoomba."
+            "We offer wash wax & groom, professional detailing, degreasing engine bays & ute trays, floor mat detailing & more."
         }
       ]
     };

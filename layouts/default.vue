@@ -20,7 +20,7 @@ export default {
 
 <style>
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-size: 16px !important;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;

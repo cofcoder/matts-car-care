@@ -5,11 +5,11 @@ module.exports = {
   head: {
     title: 'Home',
     titleTemplate: "%s | Matt\'s Car Care",
+    htmlAttrs: {
+      lang: 'en-GB'
+    },
     meta: [{
         charset: 'utf-8'
-      },
-      {
-        lang: 'en-GB'
       },
       {
         name: 'viewport',
@@ -29,7 +29,7 @@ module.exports = {
       {
         rel: 'stylesheet',
         type: 'text/css',
-        href: "https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.12/css/uikit.min.css"
+        href: "https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css"
       },
       {
         rel: 'stylesheet',
@@ -38,15 +38,21 @@ module.exports = {
       }
     ],
     script: [{
-        src: "https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.12/js/uikit.min.js",
+        src: "https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js",
         type: 'text/javascript'
       },
       {
-        src: "https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.12/js/uikit-icons.min.js",
+        src: "https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js",
         type: 'text/javascript'
       }
     ]
   },
+  /*
+  ** Global CSS
+  */
+  css: [
+    '~/assets/main.css'
+  ],
   /*
    ** Customize the progress bar color
    */

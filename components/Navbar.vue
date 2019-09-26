@@ -1,82 +1,103 @@
 <template>
-<no-ssr>
   <header>
     <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-      <nav class="uk-navbar-container uk-margin" uk-navbar>
+      <nav class="uk-navbar-container uk-margin-remove-bottom" uk-navbar>
         <!-- Navbar Logo -->
         <div class="uk-navbar-left">
           <a class="uk-navbar-item uk-logo" href="/">
-           <img src="~/assets/img/matts-car-care.svg" alt="Matt's Car Care">
+            <img src="~/assets/img/matts-car-care.svg" alt="Matt's Car Care">
           </a>
         </div>
         <!-- Navbar Right Menu -->
         <div class="uk-navbar-right">
           <ul class="uk-navbar-nav uk-visible@m">
             <li>
-              <nuxt-link to="/" exact>Home</nuxt-link>
+              <nuxt-link :to="{name: 'index'}" exact>Home</nuxt-link>
             </li>
-            <li>
-              <nuxt-link to="/about" exact>About</nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/services" exact>Services</nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/gallery" exact>Gallery</nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/contact" exact>Contact</nuxt-link>
+            <!-- Navbar List Items -->
+            <li v-for="item in items" :key="item.id">
+              <nuxt-link :to="item.message" exact>{{ item.message }}</nuxt-link>
             </li>
           </ul>
-          <a class="uk-navbar-toggle uk-hidden@m" type="button">
-            <span uk-navbar-toggle-icon></span>
-            <span class="uk-margin-small-left">Menu</span>
+          <a class="uk-navbar-toggle uk-hidden@m" href="#navFull" uk-toggle="target: #offcanvas-nav-primary">
+            <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
           </a>
-          <div uk-dropdown="mode: click">
-            <ul class="uk-nav uk-dropdown-nav">
+        </div>
+        <!-- Offcanvas For Mobile Devices -->
+        <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true; flip: true">
+          <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+            <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+              <button class="uk-offcanvas-close uk-close-large" type="button" uk-close></button>
               <li>
-                <nuxt-link to="/" exact>HOME</nuxt-link>
+                <nuxt-link :to="{name: 'index'}" exact>Home</nuxt-link>
               </li>
-              <li>
-                <nuxt-link to="/about" exact>ABOUT</nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/services" exact>SERVICES</nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/gallery" exact>GALLERY</nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/contact" exact>CONTACT</nuxt-link>
+              <!-- Navbar List Items -->
+              <li v-for="item in items" :key="item.id">
+                <nuxt-link :to="item.message" exact>{{ item.message }}</nuxt-link>
               </li>
             </ul>
+
           </div>
         </div>
       </nav>
     </div>
   </header>
-  </no-ssr>
 </template>
 
+<script>
+  export default {
+    data: function () {
+      return {
+        // Navbar list items
+        items: [{
+            message: 'about'
+          },
+          {
+            message: 'services'
+          },
+          {
+            message: 'gallery'
+          },
+          {
+            message: 'contact'
+          }
+        ]
+      }
+    }
+  }
+
+</script>
+
 <style scoped>
-.uk-navbar-container {
-  opacity: 0.97;
-}
-ul.uk-navbar-nav > li > a.nuxt-link-exact-active.nuxt-link-active {
-  border-bottom: 2px solid #f06850;
-  color: #f06850;
-}
+  .uk-navbar-container {
+    opacity: 0.97;
+  }
 
-a.nuxt-link-exact-active.nuxt-link-active {
-  border-bottom: 2px solid #f06850;
-}
+  ul.uk-navbar-nav>li>a.nuxt-link-exact-active.nuxt-link-active {
+    color: #f06850;
+  }
 
-a.uk-link-heading {
-  text-transform: uppercase;
-  color: #ecc8c2 !important;
-}
-a.uk-link-heading:active {
-  text-transform: uppercase;
-  color: #ebebeb !important;
-}
+  a.nuxt-link-exact-active.nuxt-link-active {
+    color: #f06850;
+  }
+
+  .uk-offcanvas-bar .uk-nav-primary>li>a.nuxt-link-exact-active.nuxt-link-active {
+    color: #f06850;
+  }
+
+  .uk-offcanvas-bar .uk-nav-primary>li>a:hover {
+    color: #fff;
+  }
+
+  a.uk-link-heading {
+    text-transform: uppercase;
+    color: #ecc8c2 !important;
+  }
+
+  a.uk-link-heading:active {
+    text-transform: uppercase;
+    color: #ebebeb !important;
+  }
+
 </style>

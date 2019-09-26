@@ -5,7 +5,7 @@
         <h2>DETAILING SERVICES</h2>
         <br>
         <!-- Detailing Services -->
-        <div class="uk-child-width-1-3@m" uk-grid>
+        <div class="uk-child-width-1-3@s" uk-grid>
           <div>
             <div class="uk-card uk-card-default uk-border-rounded">
               <div class="uk-card-media-top">
@@ -38,7 +38,7 @@
           </div>
         </div>
         <br>
-        <nuxt-link to="/services" class="uk-button uk-button-primary uk-button-large uk-border-rounded">OUR SERVICES</nuxt-link>
+        <nuxt-link to="/services" class="uk-button uk-button-primary uk-button-large uk-border-rounded">SERVICES</nuxt-link>
       </div>
     </div>
   </no-ssr>
