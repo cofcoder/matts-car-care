@@ -5,7 +5,7 @@
         <div class="uk-container uk-flex-center">
           <div class="uk-text-center uk-position-center">
             <h1 class="uk-heading-alt">AUTOMOTIVE DETAILING IN TOOWOOMBA</h1>
-            <h2 class="uk-heading-alt">YOUR PRIDE &amp; JOY IS IN THE RIGHT HANDS</h2>
+            <h2 class="uk-heading-alt">YOUR PRIDE AND JOY IS IN THE RIGHT HANDS</h2>
           </div>
           <div class="uk-position-small uk-position-bottom-center">
             <div class="mousey">
