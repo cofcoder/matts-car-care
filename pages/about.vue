@@ -5,7 +5,7 @@
         <h1>ABOUT US</h1>
         <section>
           <p>Matt’s Car Care is a qualified detailer in Toowoomba, it’s our passion and we thrive on ensuring your vehicle gets the best detail around. We have grown significantly over the last few years, going from strength to strength.</p>
-          <p>Our detailing services cover most vehicles from cars to Utes, 4x4’s to semi-trucks. We find that by hand washing and hand cleaning, it gives the best detailing results which most automated detailers cannot achieve.</p>
+          <p>Our detailing services cover most vehicles from cars to Utes, 4x4’s to fleet vehicles. We find that by hand washing and hand cleaning, it gives the best detailing results which most automated detailers cannot achieve.</p>
           <p>We take pride in the work we provide for your pride and joy, get in touch with us to find out how we get your pride and joy to showroom quality.</p>
         </section>
         <booking/>
