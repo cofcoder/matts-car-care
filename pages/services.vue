@@ -1,8 +1,8 @@
 <template>
 <no-ssr>
-  <div>
+  <section>
     <services/>
-  </div>
+  </section>
 </no-ssr>
 </template>
 
