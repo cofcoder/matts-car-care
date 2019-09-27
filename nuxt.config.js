@@ -24,12 +24,12 @@ module.exports = {
     link: [{
         rel: 'icon',
         type: 'image/x-icon',
-        href: '/favicon.ico'
+        href: '/favicon.png'
       },
       {
         rel: 'stylesheet',
         type: 'text/css',
-        href: "https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css"
+        href: "https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/css/uikit.min.css"
       },
       {
         rel: 'stylesheet',
@@ -38,18 +38,18 @@ module.exports = {
       }
     ],
     script: [{
-        src: "https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js",
+        src: "https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.min.js",
         type: 'text/javascript'
       },
       {
-        src: "https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js",
+        src: "https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit-icons.min.js",
         type: 'text/javascript'
       }
     ]
   },
   /*
-  ** Global CSS
-  */
+   ** Global CSS
+   */
   css: [
     '~/assets/main.css'
   ],
