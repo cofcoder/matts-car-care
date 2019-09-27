@@ -24,7 +24,7 @@
           </a>
         </div>
         <!-- Offcanvas For Mobile Devices -->
-        <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true; flip: true; bg-close: true">
+        <div id="offcanvas-nav-primary" uk-offcanvas="overlay: false; flip: true; bg-close: true">
           <div class="uk-offcanvas-bar uk-flex uk-flex-column">
 
             <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
