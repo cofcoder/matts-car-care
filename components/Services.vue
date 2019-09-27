@@ -32,7 +32,7 @@
             <div class="uk-card-body">
               <h3 class="uk-card-title">WASH WAX GROOM &plus; DRESSED</h3>
               <ul class="uk-list uk-list-divider">
-<li v-for="item in items" :key="item.id">
+                <li v-for="item in items" :key="item.id">
                   {{ item.message }}
                 </li>
                 <li>Deodorised</li>
