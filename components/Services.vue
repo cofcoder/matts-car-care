@@ -17,10 +17,9 @@
                 <li v-for="item in items" :key="item.id">
                   {{ item.message }}
                 </li>
-                <p class="uk-text-lead">&#36;45 - &#36;70</p>
               </ul>
-              <nuxt-link to="contact" class="uk-button uk-button-primary uk-button-large uk-border-rounded">BOOK
-                NOW</nuxt-link>
+              <nuxt-link to="contact" class="uk-button uk-button-primary uk-button-large uk-border-rounded" v-for="button in buttons" :key="button.id">
+                {{ button.message }}</nuxt-link>
             </div>
           </div>
         </div>
@@ -38,9 +37,8 @@
                 </li>
                 <li>Deodorised</li>
               </ul>
-              <p class="uk-text-lead">&#36;80 - &#36;120</p>
-              <nuxt-link to="contact" class="uk-button uk-button-primary uk-button-large uk-border-rounded">BOOK
-                NOW</nuxt-link>
+              <nuxt-link to="contact" class="uk-button uk-button-primary uk-button-large uk-border-rounded" v-for="button in buttons" :key="button.id">
+                {{ button.message }}</nuxt-link>
             </div>
           </div>
         </div>
@@ -59,9 +57,8 @@
                 <li>Deodorised</li>
                 <li>Hand polished</li>
               </ul>
-              <p class="uk-text-lead">&#36;140 - &#36;185</p>
-              <nuxt-link to="contact" class="uk-button uk-button-primary uk-button-large uk-border-rounded">BOOK
-                NOW</nuxt-link>
+              <nuxt-link to="contact" class="uk-button uk-button-primary uk-button-large uk-border-rounded" v-for="button in buttons" :key="button.id">
+                {{ button.message }}</nuxt-link>
             </div>
           </div>
         </div>
@@ -87,9 +84,9 @@
                 <li>Boot well &amp; spare tyre cleaned &amp; dressed</li>
                 <li>Deodorised</li>
               </ul>
-              <p class="uk-text-lead">&#36;200 - &#36;270</p>
-              <nuxt-link to="contact" class="uk-button uk-button-primary uk-button-large uk-border-rounded">BOOK
-                NOW</nuxt-link>
+              <nuxt-link to="contact" class="uk-button uk-button-primary uk-button-large uk-border-rounded" v-for="button in buttons" :key="button.id">
+                {{ button.message }}
+              </nuxt-link>
             </div>
           </div>
         </div>
@@ -103,18 +100,23 @@
 
 <script>
 export default {
-  data: function () {
+  data: function() {
     return {
       items: [
-        { message: 'Exterior wash'},
-        { message: 'Chamois dry'},
-        { message: 'Inside/outside windows cleaned'},
-        { message: 'Tyres & wheels cleaned & dressed'},
-        { message: 'Door jams wiped out'},
-        { message: 'Vinyl surfaces wiped & cleaned'},
-        { message: 'Interior vacuumed'}
-    ]
-    }
+        { message: "Exterior wash" },
+        { message: "Chamois dry" },
+        { message: "Inside/outside windows cleaned" },
+        { message: "Tyres & wheels cleaned & dressed" },
+        { message: "Door jams wiped out" },
+        { message: "Vinyl surfaces wiped & cleaned" },
+        { message: "Interior vacuumed" }
+      ],
+      buttons: [
+        {
+          message: "Call Now"
+        }
+      ]
+    };
   }
-}
+};
 </script>
