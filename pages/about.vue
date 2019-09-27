@@ -1,8 +1,8 @@
 <template>
-  <div>
-    <div class="uk-section uk-section-default">
-      <div class="uk-container">
-        <h1>Section Default</h1>
+  <div class="uk-section">
+    <div class="uk-container uk-flex-container">
+      <div class="uk-text-center">
+        <h1>ABOUT US</h1>
 
         <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
           <div>
