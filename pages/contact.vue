@@ -1,9 +1,19 @@
 <template>
-  <h2>Contact Matt's Car Care</h2>
+<no-ssr>
+  <section>
+    <!-- Contact Us -->
+    <contact/>
+  </section>
+</no-ssr>
 </template>
 
 <script>
+import Contact from "~/components/Contact.vue";
+
 export default {
+  components: {
+    Contact
+  },
   head() {
     return {
       title: "Contact",
