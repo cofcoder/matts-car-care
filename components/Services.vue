@@ -1,5 +1,5 @@
 <template>
-<section>
+<div class="uk-section">
   <div class="uk-container uk-flex-center">
     <div class="uk-text-center">
       <h1>SERVICES</h1>
@@ -94,7 +94,7 @@
     </div>
   </div>
   <br>
-</section>
+</div>
 
 </template>
 
