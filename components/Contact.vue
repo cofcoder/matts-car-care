@@ -41,6 +41,7 @@
                   <span uk-icon="icon: facebook"></span> <a href="https://www.facebook.com/mattscarcare/" target="_blank" rel="noopener">Be social with us!</a>
                 </li>
               </ul>
+              <p>Get in touch for a FREE QUOTE and we'll get back to you soon!</p>
             </div>
           </div>
         </div>
