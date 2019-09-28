@@ -113,7 +113,7 @@ export default {
       ],
       buttons: [
         {
-          message: "Call Now"
+          message: "FREE QUOTE"
         }
       ]
     };
