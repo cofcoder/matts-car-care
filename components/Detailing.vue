@@ -9,7 +9,7 @@
           <div>
             <div class="uk-card uk-card-default uk-border-rounded">
               <div class="uk-card-media-top">
-                <img src="~/assets/img/slide-2.png" class="uk-border-rounded" alt="">
+                <img src="~/assets/img/slide-2.jpg" class="uk-border-rounded" alt="">
               </div>
               <div class="uk-card-body">
                 <h3 class="uk-card-title">UTES 4X4 WAGONS VANS</h3>
@@ -19,7 +19,7 @@
           <div>
             <div class="uk-card uk-card-default uk-border-rounded">
               <div class="uk-card-media-top">
-                <img src="~/assets/img/slide-3.png" class="uk-border-rounded" alt="">
+                <img src="~/assets/img/slide-3.jpg" class="uk-border-rounded" alt="">
               </div>
               <div class="uk-card-body">
                 <h3 class="uk-card-title">CARS MOTORBIKES QUADS</h3>
@@ -29,7 +29,7 @@
           <div>
             <div class="uk-card uk-card-default uk-border-rounded">
               <div class="uk-card-media-top">
-                <img src="~/assets/img/slide-1.png" class="uk-border-rounded" alt="">
+                <img src="~/assets/img/slide-1.jpg" class="uk-border-rounded" alt="">
               </div>
               <div class="uk-card-body">
                 <h3 class="uk-card-title">PROFESSIONAL DETAILING</h3>
